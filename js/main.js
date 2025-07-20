@@ -128,22 +128,12 @@
 
 	};
 
-
-	// Loading page
-	var loaderPage = function() {
-		$("#fh5co-loader").fadeOut("fast").remove();
-	};
-
-	
 	$(function(){
 		contentWayPoint();
 		goToTop();
-		loaderPage();
 		fullHeight();
 		parallax();
 		// pieChart();
 		skillsWayPoint();
 	});
-
-
 }());

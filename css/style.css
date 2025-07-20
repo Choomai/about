@@ -1241,59 +1241,6 @@ input[type="text"] {
     margin: 0px !important;
 }
 
-div.win-loader {
-    position: relative;
-    padding-top: calc(var(--size) / 5);
-    width: var(--size);
-    height: var(--size);
-}
-div.win-loader, div.win-loader-wrap div.win-loader-circle::before {
-    --time: 4s;
-    --size: 40px;
-}
-div.win-loader-wrap {
-    position: absolute;
-    width: calc(var(--size) - 2px);
-    height: calc(var(--size) - 2px);
-}
-div.win-loader-wrap div.win-loader-circle {
-    transform: rotate(225deg);
-    animation: orbit var(--time) infinite;
-    width: calc(var(--size) - 2px);
-    height: calc(var(--size) - 2px);
-    opacity: 0;
-}
-div.win-loader-wrap div.win-loader-circle::before {
-    content: "";
-    position: absolute;
-    width: calc(var(--size) / 8);
-    height: calc(var(--size) / 8);
-    border-radius: calc(var(--size) / 8);
-    background: #fff;
-}
-div.win-loader-wrap:nth-child(2) {transform: rotate(-14deg);}
-div.win-loader-wrap:nth-child(2) div.win-loader-circle {animation-delay: 133.33ms;}
-
-div.win-loader-wrap:nth-child(3) {transform: rotate(-28deg);}
-div.win-loader-wrap:nth-child(3) div.win-loader-circle {animation-delay: 266.67ms;}
-
-div.win-loader-wrap:nth-child(4) {transform: rotate(-42deg);}
-div.win-loader-wrap:nth-child(4) div.win-loader-circle {animation-delay: 400ms;}
-div.win-loader-wrap:nth-child(5) {transform: rotate(-56deg);}
-div.win-loader-wrap:nth-child(5) div.win-loader-circle {animation-delay: 533.33ms;}
-
-@keyframes orbit {
-    0% {transform: rotate(225deg);opacity:1;animation-timing-function: ease-out;}
-    7% {transform: rotate(345deg);animation-timing-function: linear;}
-    35% {transform: rotate(495deg);animation-timing-function: ease-in-out;}
-    42% {transform: rotate(690deg);animation-timing-function: linear;}
-    70% {transform: rotate(835deg);opacity:1;animation-timing-function: linear;}
-    76% {opacity:1;}
-    77% {transform: rotate(955deg);animation-timing-function: ease-in;}
-    78% {transform: rotate(955deg);opacity:0;}
-    100% {transform: rotate(955deg);opacity:0;}
-}
-
 .js .animate-box {
     opacity: 0;
 }

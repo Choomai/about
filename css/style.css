@@ -980,13 +980,11 @@ input[type="text"] {
     right: 20px;
     z-index: 999;
     opacity: 0;
-    visibility: hidden;
     transition: 0.5s;
 }
 
 .gototop.active {
     opacity: 1;
-    visibility: visible;
 }
 
 .gototop a {
@@ -1187,7 +1185,6 @@ input[type="text"] {
 }
 
 .btn.with-arrow i {
-    visibility: hidden;
     opacity: 0;
     position: absolute;
     right: 0px;
@@ -1203,7 +1200,6 @@ input[type="text"] {
 .btn.with-arrow:hover i {
     color: #fff;
     right: 18px;
-    visibility: visible;
     opacity: 1;
 }
 

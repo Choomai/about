@@ -317,10 +317,6 @@ h1, h2, h3, h4, h5, h6, figure {
     float: left;
 }
 
-@media screen and (max-width: 768px) {
-    .info {margin-bottom: 3em;}
-}
-
 .info li {
     width: 100%;
     float: left;
@@ -398,6 +394,10 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-about .fh5co-social-icons li a:hover {
     background: var(--primary);
     color: var(--secondary);
+}
+
+@media screen and (max-width: 768px) {
+    #fh5co-about .fh5co-social-icons {margin-bottom: 3em;}
 }
 
 .fh5co-heading {

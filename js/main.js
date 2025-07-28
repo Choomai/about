@@ -97,33 +97,33 @@ function goToTop() {
 	});
 };
 
-function pieChart() {
-	$('.chart').easyPieChart({
-		scaleColor: false,
-		lineWidth: 5,
-		lineCap: 'butt',
-		barColor: '#FF9000',
-		trackColor:	"#555555",
-		size: 160,
-		animate: 1000
-	});
-};
+// function pieChart() {
+// 	$('.chart').easyPieChart({
+// 		scaleColor: false,
+// 		lineWidth: 5,
+// 		lineCap: 'butt',
+// 		barColor: '#FF9000',
+// 		trackColor:	"#555555",
+// 		size: 160,
+// 		animate: 1000
+// 	});
+// };
 
-function skillsWayPoint() {
-	if ($('#fh5co-skills').length > 0 ) {
-		$('#fh5co-skills').waypoint( function( direction ) {
+// function skillsWayPoint() {
+// 	if ($('#fh5co-skills').length > 0 ) {
+// 		$('#fh5co-skills').waypoint( function( direction ) {
 									
-			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				setTimeout( pieChart , 400);					
-				$(this.element).addClass('animated');
-			}
-		} , { offset: '90%' } );
-	}
-};
+// 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+// 				setTimeout( pieChart , 400);					
+// 				$(this.element).addClass('animated');
+// 			}
+// 		} , { offset: '90%' } );
+// 	}
+// };
 
 contentWayPoint();
 goToTop();
 fullHeight();
 parallax();
 // pieChart();
-skillsWayPoint();
+// skillsWayPoint();
